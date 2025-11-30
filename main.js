@@ -32,8 +32,8 @@ window.addEventListener("load", () => {
   });
 });
 
-TriggerGoogleLoginPopUpBtn.addEventListener("click", () => {
-  tokenClient.requestAccessToken({ prompt: "" });
+TriggerGoogleLoginPopUpBtn.onClick(() => {
+  tokenClient.requestAccessToken();
 });
 
 function accessFolder(folderID) {
