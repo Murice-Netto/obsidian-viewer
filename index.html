@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obsidian Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer async type="module" src="main.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="login">
+        <button id="trigger-google-login-popup">Auth</button>
+      </div>
+      <div id="body">
+        <div id="sidebars">
+          <div id="folders"></div>
+          <div id="files"></div>
+        </div>
+        <div id="file-content"></div>
+      </div>
+    </main>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </body>
+</html>
